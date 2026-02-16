@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reasons Why I Love You ❤️</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;400;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Background Music -->
+    <div class="music-control" id="musicControl">
+        <i class="fas fa-play"></i>
+    </div>
+    <audio id="bgMusic" loop>
+        <source src="https://assets.mixkit.co/music/preview/mixkit-love-memories-363.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Floating Hearts Container -->
+    <div class="hearts-container"></div>
+
+    <!-- Reasons Section -->
+    <section id="reasons" class="reasons-section" style="min-height: 100vh; display: flex; justify-content: center;">
+        <h2 class="section-title" style="font-size: 3rem;">You are ALL that I ever Wanted ❤️</h2>
+        <p class="subtitle">Tap to reveal what I love about you...</p>
+
+        <div class="reveal-container">
+            <div class="reveal-item" onclick="revealItem(this)">
+                <span class="cover-text">Tap to Reveal ❤️</span>
+                <span class="secret-text">Your Smile 😍</span>
+            </div>
+            <div class="reveal-item" onclick="revealItem(this)">
+                <span class="cover-text">Tap to Reveal ❤️</span>
+                <span class="secret-text">Your Happiness 😊</span>
+            </div>
+            <div class="reveal-item" onclick="revealItem(this)">
+                <span class="cover-text">Tap to Reveal ❤️</span>
+                <span class="secret-text">Your Voice 🎶</span>
+            </div>
+            <div class="reveal-item" onclick="revealItem(this)">
+                <span class="cover-text">Tap to Reveal ❤️</span>
+                <span class="secret-text">Your Dreams 🌠</span>
+            </div>
+            <div class="reveal-item" onclick="revealItem(this)">
+                <span class="cover-text">Tap to Reveal ❤️</span>
+                <span class="secret-text">Your Care 🫂</span>
+            </div>
+            <div class="reveal-item" id="futureItem" onclick="revealFuture(this)">
+                <span class="cover-text">Tap to Reveal ❤️</span>
+                <span class="secret-text">Our Future ✨</span>
+            </div>
+        </div>
+
+        <a href="index.html#gallery" class="glow-btn"
+            style="text-decoration: none; margin-top: 40px; display: inline-block;">
+            See Our Memories <i class="fas fa-arrow-right"></i>
+        </a>
+    </section>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

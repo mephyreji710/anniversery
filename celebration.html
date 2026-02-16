@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celebration! 🎂</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;400;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Background Music (Optional: Continue music or restart) -->
+    <div class="music-control" id="musicControl">
+        <i class="fas fa-play"></i>
+    </div>
+    <audio id="bgMusic" loop>
+        <source src="https://assets.mixkit.co/music/preview/mixkit-love-memories-363.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Floating Hearts Container -->
+    <div class="hearts-container"></div>
+
+    <!-- Celebration Section -->
+    <section id="celebration" class="celebration-section" style="min-height: 100vh; display: flex;">
+        <h2 class="section-title">Happy 4th Anniversary! 🎂</h2>
+
+        <div class="cake-container">
+            <div class="cake-video-container">
+                <video id="cakeVideo" width="300" playsinline
+                    style="border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.2);">
+                    <source src="vedio/cake.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+
+        <div class="message-box" id="messageBox">
+            <p>Click "Cut the Cake" to celebrate!</p>
+        </div>
+
+        <button class="cut-cake-btn" id="cutCakeBtn">
+            🔪 Cut the Cake
+        </button>
+
+        <!-- Navigation to Final Message -->
+        <button class="glow-btn" id="finalMsgBtn" style="display: none; margin-top: 20px;"
+            onclick="scrollToSection('final')">
+            See My Special Message ❤️
+        </button>
+    </section>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
